@@ -9,10 +9,10 @@ function CasestudyCarouselPage() {
 
   // Fetch project data
   useEffect(() => {
-    fetch("/JSONs/casestudy.JSON") 
+    fetch("/Portfolio/JSONs/casestudy.JSON") 
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Failed to load project data from /JSONs/casestudy.JSON");//what happens when you dont find json
+          throw new Error("Failed to load project data from /Portfolio/JSONs/casestudy.JSON");//what happens when you dont find json
         }
         return res.json();
       })

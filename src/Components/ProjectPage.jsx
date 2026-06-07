@@ -9,10 +9,10 @@ function ProjectCarouselPage() {
 
   // Fetch project data
   useEffect(() => {
-    fetch("/JSONs/project.JSON")
+    fetch("/Portfolio/JSONs/project.JSON")
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Failed to load project data from /JSONs/project.JSON");
+          throw new Error("Failed to load project data from /Portfolio/JSONs/project.JSON");
         }
         return res.json();
       })
