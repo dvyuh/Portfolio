@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "one",
+    "description": "A community-driven ecosystem for underground events, featuring a vetted RSVP system and a motion-heavy digital archive built to preserve local subcultures.",
+    "year": "2026",
+    "role": "Product Designer",
+    "scope": "UI/UX Design, Interaction Design, Figma Prototyping",
+    "status": "Concept Design",
+
+    "colors": ["bg-red-500", "bg-blue-500", "bg-green-500"]
+  },
+  {
+    "id": 2,
+    "title": "HYPERION",
+    "description": "An experimental audio-visual streaming platform optimizing real-time latency for digital creators and underground broadcasting.",
+    "year": "2026",
+    "role": "Frontend Developer",
+    "scope": "Creative Coding, WebGL, React Architecture",
+    "status": "In Development",
+
+    "colors": ["bg-purple-500", "bg-pink-500", "bg-amber-500"]
+  },
+  {
+    "id": 3,
+    "title": "NEXUS AR",
+    "description": "Spatial interface guidelines and concept designs mapping out future wearable tech interactions for decentralized city discovery.",
+    "year": "2025",
+    "role": "XR Designer",
+    "scope": "Spatial UI, Unity Mockups, Prototyping",
+    "status": "Completed",
+
+    "colors": ["bg-teal-500", "bg-indigo-500", "bg-cyan-500"]
+  }
+]

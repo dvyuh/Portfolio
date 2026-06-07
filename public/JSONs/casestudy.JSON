@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "SUBLEVEL",
+    "description": "A community-driven ecosystem for underground events, featuring a vetted RSVP system and a motion-heavy digital archive built to preserve local subcultures.",
+    "year": "2026",
+    "role": "Product Designer",
+    "scope": "UI/UX Design, Interaction Design, Figma Prototyping",
+    "status": "Concept Design",
+    "link": "/sublevel",
+    "colors": ["bg-red-500"],
+    "rowspan": ["md:row-span-2","md:row-span-2"],
+    "colspan": ["md:col-span-2"]
+  },
+  {
+    "id": 2,
+    "title": "one",
+    "description": "An experimental audio-visual streaming platform optimizing real-time latency for digital creators and underground broadcasting.",
+    "year": "2026",
+    "role": "Frontend Developer",
+    "scope": "Creative Coding, WebGL, React Architecture",
+    "status": "In Development",
+    "link": "/",
+    "colors": ["bg-purple-500", "bg-pink-500", "bg-amber-500"]
+  }
+]

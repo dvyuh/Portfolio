@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: auto !important;
+}
+
+* {
+  cursor: none !important;
+}
+
+@font-face {
+  font-family: 'Host Grotesk';
+  src: url(../src/assets/HostGrotesk-VariableFont_wght.ttf) format('truetype');
+}
+
+
+@theme {
+  /* This overrides Tailwind's default 'font-sans' stack globally */
+  --font-sans: "Host Grotesk", sans-serif;
+}
