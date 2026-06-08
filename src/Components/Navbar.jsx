@@ -1,6 +1,6 @@
 import { useState, forwardRef } from "react";
 import { HashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
+
 
 const NavBar = forwardRef(({}, ref) => {
 

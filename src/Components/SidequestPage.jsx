@@ -104,17 +104,25 @@ function SidequestCarouselPage() {
             const hasLink = project.link && project.link.trim() !== "";
             const cursorClass = hasLink ? "cursor-pointer" : "cursor-default";
 
-            const innergrid = (
+const innergrid = (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 auto-rows-[320px] w-full h-full content-center">
-              {project.boxes?.map((box, index) => (
-                <div key={index}
-                className={`${box.rowspan || 'md:row-span-1'} 
-                            ${box.colspan || 'md:col-span-1'} 
-                            ${box.color || 'bg-neutral-300'} 
-                            rounded-xl`} />
-              ))}  
+                {project.boxes?.map((box, boxIndex) => (
+                  <div
+                    key={boxIndex}
+                    className={`${box.rowspan || 'md:row-span-1'} ${box.colspan || 'md:col-span-1'} ${box.color || 'bg-neutral-100'} rounded-xl`}
+                  >
+                    {box.image && (
+                      <img
+                        src={box.image}
+                        alt={box.alt || 'Box image'}
+                        className="w-full h-full  rounded-2xl object-contain"
+                      />
+                    )}
+                  </div>
+                ))}
               </div>
             );
+
 
             const baseClasses = `absolute inset-0 block transition-all duration-700 ease-in-out transform ${positionClass}`;
 
@@ -123,6 +131,7 @@ function SidequestCarouselPage() {
                 <a 
                   href={project.link} 
                   key={project.id || index}
+                  target="_blank"
                   className={`${baseClasses} ${cursorClass}`}
                   style={{ pointerEvents: isActive ? "auto" : "none" }}
                 >

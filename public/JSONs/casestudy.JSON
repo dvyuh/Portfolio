@@ -8,9 +8,8 @@
     "scope": "UI/UX Design, Interaction Design, Figma Prototyping",
     "status": "Concept Design",
     "link": "/sublevel",
-    "boxes":[{"rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color": "bg-red-900"}, 
-              { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
-            { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
-          { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" }]
+    "boxes":[{"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "src/assets/Screenshot 2026-06-05 at 11.23.48 PM.png"},
+           {"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "src/assets/Screenshot 2026-06-05 at 11.24.09 PM.png"},
+           {"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "src/assets/Screenshot 2026-06-05 at 11.24.26 PM.png"}]
   }
 ]

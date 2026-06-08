@@ -109,13 +109,20 @@ function CasestudyCarouselPage() {
 
             const innergrid = (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 auto-rows-[320px] w-full h-full content-center">
-              {project.boxes?.map((box, index) => (
-                <div key={index}
-                className={`${box.rowspan || 'md:row-span-1'} 
-                            ${box.colspan || 'md:col-span-1'} 
-                            ${box.color || 'bg-neutral-300'} 
-                            rounded-xl`} />
-              ))}  
+                {project.boxes?.map((box, boxIndex) => (
+                  <div
+                    key={boxIndex}
+                    className={`${box.rowspan || 'md:row-span-1'} ${box.colspan || 'md:col-span-1'} ${box.color || 'bg-neutral-100'} rounded-xl`}
+                  >
+                    {box.image && (
+                      <img
+                        src={box.image}
+                        alt={box.alt || 'Box image'}
+                        className="w-full h-full  rounded-xl object-contain"
+                      />
+                    )}
+                  </div>
+                ))}
               </div>
             );
 
