@@ -116,7 +116,7 @@ function CasestudyCarouselPage() {
                   >
                     {box.image && (
                       <img
-                        src={box.image}
+                        src={`${import.meta.env.BASE_URL}${box.image}`}
                         alt={box.alt || 'Box image'}
                         className="w-full h-full  rounded-xl object-contain"
                       />
