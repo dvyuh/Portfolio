@@ -2,12 +2,14 @@ import { useState, forwardRef } from "react";
 import { HashLink } from 'react-router-hash-link';
 
 const NavBar = forwardRef(({}, ref) => {
+
   const [showToast, setShowToast] = useState(false); // message popup
 
   const handleEmailCopy = () => {
     navigator.clipboard.writeText("divya.tyagi.7106@gmail.com");
     setShowToast(true);
     setTimeout(() => setShowToast(false), 2000);
+    
   };
 
   return (
@@ -15,7 +17,7 @@ const NavBar = forwardRef(({}, ref) => {
       {/* Right button */}
       <nav ref={ref} className="flex justify-between items-center bg-neutral-100 text-black sticky p-10 top-0 z-50">
         <div className="navbar-left">
-          <a href="/Portfolio" className="text-2xl font-sans text-black no-underline">
+          <a href="/" className="text-2xl font-sans text-black no-underline">
             DIVYA TYAGI
           </a>
         </div>
@@ -24,16 +26,16 @@ const NavBar = forwardRef(({}, ref) => {
         <div className="navbar-center">
           <ul className="list-none text-xl gap-16 flex m-0 p-0 mr-4">
             <li>
-              <HashLink smooth to="/Portfolio/#projects" className="cursor-pointer">Projects</HashLink>
+              <HashLink smooth to="/#projects" className="cursor-pointer">Projects</HashLink>
             </li>
             <li>
-              <HashLink smooth to="/Portfolio/#casestudies" className="cursor-pointer">Case Studies</HashLink>
+              <HashLink smooth to="/#casestudies" className="cursor-pointer">Case Studies</HashLink>
             </li>
             <li>
-              <HashLink smooth to="/Portfolio/#sidequests" className="cursor-pointer">Side Quests</HashLink>
+              <HashLink smooth to="/#sidequests" className="cursor-pointer">Side Quests</HashLink>
             </li>
             <li>
-              <HashLink smooth to="/Portfolio/#me" className="cursor-pointer">Me</HashLink>
+              <HashLink smooth to="/#me" className="cursor-pointer">Me</HashLink>
             </li>
           </ul>
         </div>

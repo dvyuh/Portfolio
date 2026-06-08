@@ -45,7 +45,7 @@ function App() {
       <Route path="/resume" element={<Resume/>} />
       <Route path="/sublevel" element={<Sublevel/>} />
 
-      <Route path="/Portfolio" element={<>
+      <Route path="/" element={<>
           <Hero />
 
           <ProjectCarouselPage/>

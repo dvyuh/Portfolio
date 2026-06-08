@@ -9,10 +9,10 @@ function ProjectCarouselPage() {
 
   // Fetch project data
   useEffect(() => {
-    fetch("/Portfolio/JSONs/project.JSON")
+    fetch(`${import.meta.env.BASE_URL}JSONs/project.JSON`)
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Failed to load project data from /Portfolio/JSONs/project.JSON");
+          throw new Error(`Failed to load project data from ${import.meta.env.BASE_URL}JSONs/project.JSON`);
         }
         return res.json();
       })

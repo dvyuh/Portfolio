@@ -9,10 +9,10 @@ function SidequestCarouselPage() {
 
   // Fetch project data
   useEffect(() => {
-    fetch("/Portfolio/JSONs/sidequest.JSON")
+    fetch(`${import.meta.env.BASE_URL}JSONs/sidequest.JSON`)
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Failed to load project data from /Portfolio/JSONs/sidequest.JSON");
+          throw new Error(`Failed to load project data from ${import.meta.env.BASE_URL}JSONs/sidequest.JSON`);
         }
         return res.json();
       })
