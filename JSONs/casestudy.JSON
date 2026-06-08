@@ -8,8 +8,8 @@
     "scope": "UI/UX Design, Interaction Design, Figma Prototyping",
     "status": "Concept Design",
     "link": "/sublevel",
-    "boxes":[{"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "/images/home.png"},
-           {"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "/images/detail.png"},
-           {"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "/images/chat.png"}]
+    "boxes":[{"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "./images/home.png"},
+           {"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "./images/detail.png"},
+           {"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "image": "./images/chat.png"}]
   }
 ]
