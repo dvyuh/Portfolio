@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 
 function ProjectCarouselPage() {
   const [projects, setProjects] = useState([]);
@@ -106,9 +106,13 @@ function ProjectCarouselPage() {
 
             const innergrid = (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 auto-rows-[320px] w-full h-full content-center">
-                <div className={`md:row-span-2 rounded-xl ${project.colors?.[0] || 'bg-neutral-300'}`} />
-                <div className={`md:row-span-2 rounded-xl ${project.colors?.[1] || 'bg-neutral-300'}`} />
-                <div className={`md:row-span-2 rounded-xl ${project.colors?.[2] || 'bg-neutral-300'}`} />
+              {project.boxes?.map((box, index) => (
+                <div key={index}
+                className={`${box.rowspan || 'md:row-span-1'} 
+                            ${box.colspan || 'md:col-span-1'} 
+                            ${box.color || 'bg-neutral-300'} 
+                            rounded-xl`} />
+              ))}  
               </div>
             );
 
@@ -116,14 +120,14 @@ function ProjectCarouselPage() {
 
             if (hasLink) {
               return (
-                <Link 
-                  to={project.link} 
+                <a 
+                  href={project.link} 
                   key={project.id || index}
                   className={`${baseClasses} ${cursorClass}`}
                   style={{ pointerEvents: isActive ? "auto" : "none" }}
                 >
                   {innergrid}
-                </Link>
+                </a>
               );
             }
             return (
@@ -141,7 +145,7 @@ function ProjectCarouselPage() {
 
       {/* CONTROLS AREA */}
       <div className="w-full flex justify-center pb-4">
-        <div className="flex items-center gap-6 bg-white border border-neutral-200/60 px-6 py-3 rounded-full shadow-sm z-10">
+        <div className="flex items-center gap-10 bg-white border border-neutral-200/60 px-6 py-3 rounded-full shadow-sm z-10">
           
           {/* Left Arrow */}
           <button 

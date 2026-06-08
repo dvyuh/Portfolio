@@ -105,11 +105,17 @@ function CasestudyCarouselPage() {
             const hasLink = project.link && project.link.trim() !== "";
             const cursorClass = hasLink ? "cursor-pointer" : "cursor-default";
 
+           // grid system
+
             const innergrid = (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 auto-rows-[320px] w-full h-full content-center">
-              <div className={` ${project.rowspan?.[0] || 'md:row-span-1'} ${project.colspan?.[0] || 'md:col-span-1'} rounded-xl ${project.colors?.[0] || 'bg-neutral-300'}`} />
-              <div className={` ${project.rowspan?.[1] || 'md:row-span-1'} ${project.colspan?.[1] || 'md:col-span-1'} rounded-xl ${project.colors?.[1] || 'bg-neutral-300'}`} />
-                
+              {project.boxes?.map((box, index) => (
+                <div key={index}
+                className={`${box.rowspan || 'md:row-span-1'} 
+                            ${box.colspan || 'md:col-span-1'} 
+                            ${box.color || 'bg-neutral-300'} 
+                            rounded-xl`} />
+              ))}  
               </div>
             );
 
@@ -142,7 +148,7 @@ function CasestudyCarouselPage() {
 
       {/* CONTROLS AREA */}
       <div className="w-full flex justify-center pb-4">
-        <div className="flex items-center gap-6 bg-white border border-neutral-200/60 px-6 py-3 rounded-full shadow-sm z-10">
+        <div className="flex items-center gap-10 bg-white border border-neutral-200/60 px-6 py-3 rounded-full shadow-sm z-10">
           
           {/* Left Arrow */}
           <button 

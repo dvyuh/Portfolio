@@ -8,28 +8,9 @@
     "scope": "UI/UX Design, Interaction Design, Figma Prototyping",
     "status": "Concept Design",
     "link": "",
-    "colors": ["bg-red-500", "bg-blue-500", "bg-green-500"]
-  },
-  {
-    "id": 2,
-    "title": "HELLENFKJEF",
-    "description": "An experimental audio-visual streaming platform optimizing real-time latency for digital creators and underground broadcasting.",
-    "year": "2026",
-    "role": "Frontend Developer",
-    "scope": "Creative Coding, WebGL, React Architecture",
-    "status": "In Development",
-    "link": "",
-    "colors": ["bg-purple-500", "bg-pink-500", "bg-amber-500"]
-  },
-  {
-    "id": 3,
-    "title": "ewfijwefwb₹",
-    "description": "Spatial interface guidelines and concept designs mapping out future wearable tech interactions for decentralized city discovery.",
-    "year": "2025",
-    "role": "XR Designer",
-    "scope": "Spatial UI, Unity Mockups, Prototyping",
-    "status": "Completed",
-    "link": "",
-    "colors": ["bg-teal-500", "bg-indigo-500", "bg-cyan-500"]
+    "boxes":[{"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "color": "bg-red-900"}, 
+              { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
+            { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
+          { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" }]
   }
 ]

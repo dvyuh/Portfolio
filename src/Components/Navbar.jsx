@@ -1,5 +1,6 @@
 import { useState, forwardRef } from "react";
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const NavBar = forwardRef(({}, ref) => {
 
@@ -17,9 +18,9 @@ const NavBar = forwardRef(({}, ref) => {
       {/* Right button */}
       <nav ref={ref} className="flex justify-between items-center bg-neutral-100 text-black sticky p-10 top-0 z-50">
         <div className="navbar-left">
-          <a href="/" className="text-2xl font-sans text-black no-underline">
+          <HashLink to="/#hero" className="text-2xl font-sans text-black no-underline">
             DIVYA TYAGI
-          </a>
+          </HashLink>
         </div>
 
         {/* Menu button */}
