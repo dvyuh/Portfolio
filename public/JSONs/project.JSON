@@ -1,39 +1,66 @@
 [
   {
     "id": 1,
-    "title": "HEY",
-    "description": "A community-driven ecosystem for underground events, featuring a vetted RSVP system and a motion-heavy digital archive built to preserve local subcultures.",
+    "title": "Personal Portfolio",
+    "description": "A clean, responsive portfolio website built using React, Vite, and Tailwind CSS to showcase my design and development projects.",
     "year": "2026",
-    "role": "Product Designer",
-    "scope": "UI/UX Design, Interaction Design, Figma Prototyping",
-    "status": "Concept Design",
-    "link": "https://github.com/dvyuh/Portfolio#",
-    "boxes":[{"rowspan": "md:row-span-2", "colspan": "md:col-span-1", "color": "bg-red-900"}, 
-              { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
-            { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
-          { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" }]
-
+    "role": "Frontend Developer & Designer",
+    "scope": "UI/UX Design, Frontend Development",
+    "stack": "React, Vite, Tailwind CSS",
+    "link": "https://github.com/dvyuh/Portfolio",
+    "boxes": [
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "color": "bg-zinc-900" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-", "color": "bg-zinc-900" },
+      { "rowspan": "md:row-span-2", "colspan": "md:col-span-2", "color": "bg-zinc-900" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color": "bg-zinc-900" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-zinc-900" }
+      
+    ]
   },
-  {
+    {
     "id": 2,
-    "title": "HYPERION",
-    "description": "An experimental audio-visual streaming platform optimizing real-time latency for digital creators and underground broadcasting.",
+    "title": "NotesApp",
+    "description": "A Python application that records audio input and leverages a local Ollama Mistral instance to automatically transcribe and generate structured, detailed notes.",
     "year": "2026",
-    "role": "Frontend Developer",
-    "scope": "Creative Coding, WebGL, React Architecture",
-    "status": "In Development",
-    "boxes":[{"rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color": "bg-red-900"}, 
-              { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
-            { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" },
-          { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-blue-800" }]
+    "role": "Developer & Designer",
+    "scope": "Audio Processing, Local LLM Integration, Software Engineering",
+    "stack": "Python, Ollama, Mistral",
+    "link": "https://github.com/dvyuh/notesApp",
+    "boxes": [{ "rowspan": "md:row-span-2", "colspan": "md:col-span-4", "color":"bg-neutral-950", "image": "images/notesapp.png" },
+              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950" , "image": "images/notesapp.png" },
+              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950", "image": "images/notesapp.png" }
+    ]
   },
-  {
+      {
     "id": 3,
-    "title": "NEXUS AR",
-    "description": "Spatial interface guidelines and concept designs mapping out future wearable tech interactions for decentralized city discovery.",
-    "year": "2025",
-    "role": "XR Designer",
-    "scope": "Spatial UI, Unity Mockups, Prototyping",
-    "status": "Completed"
+    "title": "Interrogation Room",
+    "description": "A terminal-based text adventure game built in Python, leveraging a local Ollama Mistral LLM to simulate dynamic suspect behavior and an AI officer who assesses the interrogation strategy.",
+    "year": "2026",
+    "role": "Developer",
+    "scope": "Game Design, LLM Prompt Engineering, Python Backend",
+    "stack": "Python, Ollama, Mistral",
+    "link": "https://github.com/dvyuh/Interrogation_Room",
+    "boxes": [
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3" , "color":"bg-neutral-950","image": "images/inter-elias.png" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3" ,"color":"bg-neutral-950", "image": "images/officer chance.png" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-6" ,"color":"bg-neutral-950", "image": "images/running.png" }
+    ]
+  },
+      {
+    "id": 4,
+    "title": "Rogue Clone",
+    "description": "A terminal-based clone of the original 1980 procedural dungeon crawler, built using Python and the tcod library to learn core software architecture and tile-based rendering.",
+    "year": "2026",
+    "role": "Developer",
+    "scope": "Game Logic, Procedural Generation, Software Engineering",
+    "stack": "Python, tcod",
+    "link": "https://github.com/dvyuh/rogue",
+    "boxes": [
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue home.png" , "color":"bg-neutral-950" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue.png" , "color":"bg-neutral-950" }, 
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue.png" , "color":"bg-neutral-950" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue.png" , "color":"bg-neutral-950" }
+    ]
   }
+
 ]

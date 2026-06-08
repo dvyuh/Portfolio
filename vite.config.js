@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig(({ command }) =>{
   return {
       plugins: [react(),tailwindcss()],
-      base: command === 'build' ? '/Portfolio/' : '/' 
+     base: command === 'build' ? '/Portfolio/' : '/'  
   }
 
 })

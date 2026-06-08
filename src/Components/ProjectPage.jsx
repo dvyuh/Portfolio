@@ -87,8 +87,8 @@ function ProjectCarouselPage() {
                     <span className="text-[#111] text-[15px] max-w-[70%] text-right">{project.scope}</span>
                   </div>
                   <div className="flex justify-between px-0 py-4 border-b-[#ddd] border-b border-solid">
-                    <span className="text-[#888] text-sm">Status</span>
-                    <span className="text-[#111] text-[15px] max-w-[70%] text-right">{project.status}</span>
+                    <span className="text-[#888] text-sm">Stack</span>
+                    <span className="text-[#111] text-[15px] max-w-[70%] text-right">{project.stack}</span>
                   </div>
                 </div>
               </div>
@@ -105,17 +105,17 @@ function ProjectCarouselPage() {
             const cursorClass = hasLink ? "cursor-pointer" : "cursor-default";
 
 const innergrid = (
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 auto-rows-[320px] w-full h-full content-center">
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-2 auto-rows-[320px] w-full h-full content-center">
                 {project.boxes?.map((box, boxIndex) => (
                   <div
                     key={boxIndex}
-                    className={`${box.rowspan || 'md:row-span-1'} ${box.colspan || 'md:col-span-1'} ${box.color || 'bg-neutral-300'} rounded-xl`}
+                    className={`${box.rowspan || 'md:row-span-1'} ${box.colspan || 'md:col-span-1'} ${box.color || 'bg-neutral-100'} rounded-xl`}
                   >
                     {box.image && (
                       <img
                         src={`${import.meta.env.BASE_URL}${box.image}`}
                         alt={box.alt || 'Box image'}
-                        className="w-full h-full  rounded-xl"
+                        className="w-full h-full  rounded-xl object-contain"
                       />
                     )}
                   </div>
