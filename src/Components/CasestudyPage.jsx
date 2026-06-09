@@ -108,7 +108,7 @@ function CasestudyCarouselPage() {
            // grid system
 
             const innergrid = (
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 auto-rows-[320px] w-full h-full content-center">
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-2 auto-rows-[320px] w-full h-full content-center">
                 {project.boxes?.map((box, boxIndex) => (
                   <div
                     key={boxIndex}
