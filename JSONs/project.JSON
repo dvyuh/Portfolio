@@ -8,27 +8,25 @@
     "scope": "UI/UX Design, Frontend Development",
     "stack": "React, Vite, Tailwind CSS",
     "link": "https://github.com/dvyuh/Portfolio",
-    "boxes": [
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "color": "bg-zinc-900" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-", "color": "bg-zinc-900" },
-      { "rowspan": "md:row-span-2", "colspan": "md:col-span-2", "color": "bg-zinc-900" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color": "bg-zinc-900" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-1", "color": "bg-zinc-900" }
+    "boxes": [ 
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "color": "bg-zinc-900" ,"image": "images/hero.png"},
+      { "rowspan": "md:row-span-2", "colspan": "md:col-span-3", "color": "bg-zinc-900" ,"image": "images/mobile.png" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "color": "bg-zinc-900" ,"image": "images/figma.png"}
       
     ]
   },
     {
     "id": 2,
-    "title": "NotesApp",
-    "description": "A Python application that records audio input and leverages a local Ollama Mistral instance to automatically transcribe and generate structured, detailed notes.",
+    "title": "Notes App",
+    "description": "A voice-first clinical intake application built in Python that uses a local Ollama Mistral instance to instantly transcribe spoken patient data and automatically populate structured electronic medical forms.",
     "year": "2026",
     "role": "Developer & Designer",
     "scope": "Audio Processing, Local LLM Integration, Software Engineering",
     "stack": "Python, Ollama, Mistral",
     "link": "https://github.com/dvyuh/notesApp",
     "boxes": [{ "rowspan": "md:row-span-2", "colspan": "md:col-span-4", "color":"bg-neutral-950", "image": "images/notesapp.png" },
-              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950" , "image": "images/notesapp.png" },
-              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950", "image": "images/notesapp.png" }
+              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950" , "image": "images/notesfield.png" },
+              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950", "image": "images/notesnotes.png" }
     ]
   },
       {
@@ -56,10 +54,10 @@
     "stack": "Python, tcod",
     "link": "https://github.com/dvyuh/rogue",
     "boxes": [
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue og.png" , "color":"bg-neutral-950" },
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue color.png" , "color":"bg-neutral-950" }, 
       { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue home.png" , "color":"bg-neutral-950" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue.png" , "color":"bg-neutral-950" }, 
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue.png" , "color":"bg-neutral-950" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue.png" , "color":"bg-neutral-950" }
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue player.png" , "color":"bg-neutral-950" }
     ]
   }
 
