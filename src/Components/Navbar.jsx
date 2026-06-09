@@ -2,7 +2,7 @@ import { useState, forwardRef } from "react";
 import { HashLink } from 'react-router-hash-link';
 
 
-const NavBar = forwardRef(({}, ref) => {
+const NavBar = forwardRef((props, ref) => {
 
   const [showToast, setShowToast] = useState(false); // message popup
 

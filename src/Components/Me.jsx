@@ -6,7 +6,7 @@ function Me(){
       {/* LEFT IMAGE */}
       <div className="flex-1 flex flex-col items-center gap-8">
         <img
-          src="/images/face.webp"
+          src="images/face.webp"
           className=" w-105 h-180 rounded-xl object-cover"
         />
         <Link to="/resume"
