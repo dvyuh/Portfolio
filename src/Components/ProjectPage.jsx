@@ -53,13 +53,14 @@ function ProjectCarouselPage() {
 
   return (
     <div className="snap-start min-h-screen w-full h-screen bg-neutral-100 flex flex-col justify-between p-20 relative overflow-hidden font-sans" id="projects">
-      <h1 className="text-xl font-light text-neutral-400 tracking-[0.5em] translate-y-35">PROJECTS</h1>
       
       {/* MAIN SPLIT CONTENT AREA */}
       <div className="flex-1 w-full flex justify-between items-center gap-20 relative">
-        
+
+        <div className="flex-1 max-w-125 relative h-112.5  gap-20">
+          <h1 className="text-xl font-light text-neutral-400 tracking-[0.5em]">PROJECTS</h1>
         {/* LEFT SIDE: TEXT SLIDER */}
-        <div className="flex-1 max-w-125 relative h-112.5 overflow-hidden">
+        <div className="flex-1 max-w-125 relative h-130 ">
           {projects.map((project, index) => {
             const positionClass = getPositionClass(index);
 
@@ -95,6 +96,8 @@ function ProjectCarouselPage() {
             );
           })}
         </div>
+        </div>
+
 
         {/* RIGHT SIDE: IMAGES SLIDER */}
         <div className="w-full flex-[1.2] relative h-162.5 overflow-hidden">

@@ -15,7 +15,7 @@ function Me(){
       {/* RIGHT TEXT */}
 
       <div className=" flex-2 flex flex-col gap-10">
-        <p className="text-4xl leading-[1.6] text-[#111] max-w-250">
+        <p className="text-3xl leading-[1.6] text-[#111] max-w-250">
           I am a computer science student and digital designer focused on where
           layout structure and logical systems meet. I spend my time breaking
           away from generic corporate UI templates to design clean, high-intent
@@ -23,7 +23,7 @@ function Me(){
           as intended.
         </p>
 
-        <p className="text-4xl leading-[1.6] text-[#111] max-w-250">
+        <p className="text-3xl leading-[1.6] text-[#111] max-w-250">
           In my free time I experiment with tactile graphic design, moving
           pixels around in Affinity, and making motion-heavy layouts. When I am
           not staring at code or organizing design files, I am deep into
