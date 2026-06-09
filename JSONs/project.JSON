@@ -1,21 +1,19 @@
 [
   {
     "id": 1,
-    "title": "Personal Portfolio",
-    "description": "A clean, responsive portfolio website built using React, Vite, and Tailwind CSS to showcase my design and development projects.",
+    "title": "Rogue Clone",
+    "description": "A terminal-based clone of the original 1980 procedural dungeon crawler, built using Python and the tcod library to learn core software architecture and tile-based rendering.",
     "year": "2026",
-    "role": "Frontend Developer & Designer",
-    "scope": "UI/UX Design, Frontend Development",
-    "stack": "React, Vite, Tailwind CSS",
-    "link": "https://github.com/dvyuh/Portfolio",
-    "boxes": [ 
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "color": "bg-zinc-900" ,"image": "images/hero.png"},
-      { "rowspan": "md:row-span-2", "colspan": "md:col-span-3", "color": "bg-zinc-900" ,"image": "images/mobile.png" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "color": "bg-zinc-900" ,"image": "images/figma.png"}
-      
+    "role": "Developer",
+    "scope": "Game Logic, Procedural Generation, Software Engineering",
+    "stack": "Python, tcod",
+    "link": "https://github.com/dvyuh/rogue",
+    "boxes": [      { "rowspan": "md:row-span-2", "colspan": "md:col-span-3", "image": "images/rogue home.png" },
+      { "rowspan": "md:row-span-2", "colspan": "md:col-span-3", "image": "images/rogue og.png" }
+
     ]
   },
-    {
+  {
     "id": 2,
     "title": "Notes App",
     "description": "A voice-first clinical intake application built in Python that uses a local Ollama Mistral instance to instantly transcribe spoken patient data and automatically populate structured electronic medical forms.",
@@ -24,13 +22,27 @@
     "scope": "Audio Processing, Local LLM Integration, Software Engineering",
     "stack": "Python, Ollama, Mistral",
     "link": "https://github.com/dvyuh/notesApp",
-    "boxes": [{ "rowspan": "md:row-span-2", "colspan": "md:col-span-4", "color":"bg-neutral-950", "image": "images/notesapp.png" },
-              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950" , "image": "images/notesfield.png" },
-              { "rowspan": "md:row-span-1", "colspan": "md:col-span-2", "color":"bg-neutral-950", "image": "images/notesnotes.png" }
+    "boxes": [{ "rowspan": "md:row-span-2", "colspan": "md:col-span-6", "image": "images/notesapp.png" }
     ]
   },
-      {
+
+  {
     "id": 3,
+    "title": "Personal Portfolio",
+    "description": "A clean, responsive portfolio website built using React, Vite, and Tailwind CSS to showcase my design and development projects.",
+    "year": "2026",
+    "role": "Frontend Developer & Designer",
+    "scope": "UI/UX Design, Frontend Development",
+    "stack": "React, Vite, Tailwind CSS",
+    "link": "https://github.com/dvyuh/Portfolio",
+    "boxes": [ 
+      { "rowspan": "md:row-span-2", "colspan": "md:col-span-6", "color": "bg-zinc-900" ,"image": "images/hero.png"}
+      
+    ]
+  },
+    
+      {
+    "id": 4,
     "title": "Interrogation Room",
     "description": "A terminal-based text adventure game built in Python, leveraging a local Ollama Mistral LLM to simulate dynamic suspect behavior and an AI officer who assesses the interrogation strategy.",
     "year": "2026",
@@ -39,26 +51,9 @@
     "stack": "Python, Ollama, Mistral",
     "link": "https://github.com/dvyuh/Interrogation_Room",
     "boxes": [
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3" , "color":"bg-neutral-950","image": "images/inter-elias.png" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3" ,"color":"bg-neutral-950", "image": "images/officer chance.png" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-6" ,"color":"bg-neutral-950", "image": "images/running.png" }
-    ]
-  },
-      {
-    "id": 4,
-    "title": "Rogue Clone",
-    "description": "A terminal-based clone of the original 1980 procedural dungeon crawler, built using Python and the tcod library to learn core software architecture and tile-based rendering.",
-    "year": "2026",
-    "role": "Developer",
-    "scope": "Game Logic, Procedural Generation, Software Engineering",
-    "stack": "Python, tcod",
-    "link": "https://github.com/dvyuh/rogue",
-    "boxes": [
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue og.png" , "color":"bg-neutral-950" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue color.png" , "color":"bg-neutral-950" }, 
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue home.png" , "color":"bg-neutral-950" },
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-3", "image": "images/rogue player.png" , "color":"bg-neutral-950" }
+      { "rowspan": "md:row-span-1", "colspan": "md:col-span-6" ,"color":"bg-zinc-900", "image": "images/running.png" }
     ]
   }
+
 
 ]
