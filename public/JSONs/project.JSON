@@ -25,24 +25,8 @@
     "boxes": [{ "rowspan": "md:row-span-2", "colspan": "md:col-span-6", "image": "images/notesapp.png" }
     ]
   },
-
   {
     "id": 3,
-    "title": "Personal Portfolio",
-    "description": "A clean, responsive portfolio website built using React, Vite, and Tailwind CSS to showcase my design and development projects.",
-    "year": "2026",
-    "role": "Frontend Developer & Designer",
-    "scope": "UI/UX Design, Frontend Development",
-    "stack": "React, Vite, Tailwind CSS",
-    "link": "https://github.com/dvyuh/Portfolio",
-    "boxes": [ 
-      { "rowspan": "md:row-span-2", "colspan": "md:col-span-6", "color": "bg-zinc-900" ,"image": "images/hero.png"}
-      
-    ]
-  },
-    
-      {
-    "id": 4,
     "title": "Interrogation Room",
     "description": "A terminal-based text adventure game built in Python, leveraging a local Ollama Mistral LLM to simulate dynamic suspect behavior and an AI officer who assesses the interrogation strategy.",
     "year": "2026",
@@ -51,7 +35,21 @@
     "stack": "Python, Ollama, Mistral",
     "link": "https://github.com/dvyuh/Interrogation_Room",
     "boxes": [
-      { "rowspan": "md:row-span-1", "colspan": "md:col-span-6" ,"color":"bg-zinc-900", "image": "images/running.png" }
+      { "rowspan": "md:row-span-2", "colspan": "md:col-span-6" , "image": "images/interrogationroom.png" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Personal Portfolio",
+    "description": "A clean, responsive portfolio website built using React, Vite, and Tailwind CSS to showcase my design and development projects.",
+    "year": "2026",
+    "role": "Frontend Developer & Designer",
+    "scope": "UI/UX Design, Frontend Development",
+    "stack": "React, Vite, Tailwind CSS",
+    "link": "https://github.com/dvyuh/Portfolio",
+    "boxes": [ 
+      { "rowspan": "md:row-span-2", "colspan": "md:col-span-6", "color": "bg-zinc-900" ,"image": "images/gif.gif"}
+      
     ]
   }
 

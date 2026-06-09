@@ -17,14 +17,14 @@ function Resume() {
             style={{ fontFamily: "'DM Mono', monospace" }}>
             <div><a href="mailto:divya.tyagi.7106@gmail.com" className="hover:text-black dark:hover:text-white transition-colors">divya.tyagi.7106@gmail.com</a></div>
             <div className="space-x-2">
-              <a href="#" className="hover:text-black dark:hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://linkedin.com/in/divya-tyagi-774a8740a" target="_blank" className="hover:text-black dark:hover:text-white transition-colors">LinkedIn</a>
               <span>·</span>
-              <a href="#" className="hover:text-black dark:hover:text-white transition-colors">GitHub</a>
+              <a href="https://github.com/dvyuh" target="_blank" className="hover:text-black dark:hover:text-white transition-colors">GitHub</a>
               <span>·</span>
-              <a href="#" className="hover:text-black dark:hover:text-white transition-colors">Instagram</a>
+              <a href="https://www.instagram.com/designsandstuf?igsh=MWVlZTZwcHJvNDQ2cg%3D%3D&utm_source=qr" target="_blank" className="hover:text-black dark:hover:text-white transition-colors">Instagram</a>
             </div>
             <a
-              href="/resume.pdf"
+              href="images/final_resume.pdf"
               download
               className="inline-flex items-center gap-1.5 mt-1.5 px-3 py-1 border border-neutral-300  rounded-lg text-[11px] text-black  hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
               ↓ Download PDF
@@ -40,7 +40,7 @@ function Resume() {
 
             {/* Education */}
             <Section label="Education">
-              <EduRow title="BTech Computer Science" sub="VIT Vellore · 2024–2028" grade="CGPA 8.0" />
+              <EduRow title="BTech Computer Science" sub="VIT Vellore · 2025–2029" grade="CGPA 8.0" />
               <EduRow title="Class XII · CBSE" sub="Khyati World School, Ahmedabad" grade="75%" />
               <EduRow title="Class X · CBSE" sub="Srs. Gnayan Dham, Vapi" grade="93%" />
             </Section>

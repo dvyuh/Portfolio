@@ -5,10 +5,13 @@ function Me(){
     <section className="snap-start min-h-screen w-full h-screen flex justify-between items-center bg-neutral-100 gap-20 px-25 py-30 font-sans" id="me">
       {/* LEFT IMAGE */}
       <div className="flex-1 flex flex-col items-center gap-8">
-        <div className="w-105 h-140 rounded-xl bg-black " />
+        <img
+          src="/images/face.webp"
+          className=" w-105 h-180 rounded-xl object-cover"
+        />
         <Link to="/resume"
-        className="text-xl tracking-widest uppercase text-neutral-800 hover:text-black transition-colors border-b border-neutral-400 hover:border-black pb-0.5 "
-        >résumé</Link>
+        className="text-xl tracking-widest uppercase text-neutral-800 hover:text-black transition-colors  border-neutral-400 hover:border-black pb-0.5 "
+        >[View résumé]</Link>
 
       </div>
 
