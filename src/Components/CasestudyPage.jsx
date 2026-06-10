@@ -136,6 +136,7 @@ function CasestudyCarouselPage() {
                   to={project.link} 
                   key={project.id || index}
                   className={`${baseClasses} ${cursorClass}`}
+                  target="_blank"
                   style={{ pointerEvents: isActive ? "auto" : "none" }}
                 >
                   {innergrid}

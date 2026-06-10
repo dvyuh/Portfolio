@@ -100,7 +100,7 @@ function ProjectCarouselPage() {
 
 
         {/* RIGHT SIDE: IMAGES SLIDER */}
-        <div className="w-full flex-[1.2] relative h-162.5 overflow-hidden">
+        <div className="w-full flex-[1.2] relative h-160 overflow-hidden">
           {projects.map((project, index) => {
             const positionClass = getPositionClass(index);
             const isActive = index === currentIndex;
@@ -108,7 +108,7 @@ function ProjectCarouselPage() {
             const cursorClass = hasLink ? "cursor-pointer" : "cursor-default";
 
 const innergrid = (
-              <div className="grid grid-cols-1 md:grid-cols-6 gap-2 auto-rows-[320px] w-full h-full content-center">
+              <div className="grid grid-cols-1 md:grid-cols-6 gap-2 auto-rows-[320px] w-full h-full content-fill">
                 {project.boxes?.map((box, boxIndex) => (
                   <div
                     key={boxIndex}

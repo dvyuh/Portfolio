@@ -66,12 +66,21 @@ const NavBar = forwardRef((props, ref) => {
             >
               GitHub
             </a>
+            <a
+              href="https://www.behance.net/divyatyagi9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3 text-sm text-black hover:bg-neutral-200 no-underline transition-colors border-t border-neutral-200"
+            >
+              Behance
+            </a>
             <button
               onClick={handleEmailCopy}
               className="px-5 py-3 text-sm text-black hover:bg-neutral-200 text-left transition-colors border-t border-neutral-200 cursor-pointer"
             >
               Email
             </button>
+            
           </div>
         </div>
       </nav>
