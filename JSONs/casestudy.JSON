@@ -7,9 +7,9 @@
     "role": "Product Designer",
     "scope": "UI/UX Design, Interaction Design, Figma Prototyping",
     "status": "Concept Design",
-    "link": "/sublevel",
-    "boxes":[{"rowspan": "md:row-span-2", "colspan": "md:col-span-2", "image": "images/home.png"},
-           {"rowspan": "md:row-span-2", "colspan": "md:col-span-2", "image": "images/detail.png"},
-           {"rowspan": "md:row-span-2", "colspan": "md:col-span-2", "image": "images/chat.png"}]
+    "link": "https://www.behance.net/gallery/250894917/SubLevel",
+    "boxes":[{"rowspan": "md:row-span-2", "colspan": "md:col-span-2", "image": "images/home1.png"},
+           {"rowspan": "md:row-span-2", "colspan": "md:col-span-2", "image": "images/detail1.png"},
+           {"rowspan": "md:row-span-2", "colspan": "md:col-span-2", "image": "images/chat1.png"}]
   }
 ]

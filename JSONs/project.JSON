@@ -48,7 +48,7 @@
     "stack": "React, Vite, Tailwind CSS",
     "link": "https://github.com/dvyuh/Portfolio",
     "boxes": [ 
-      { "rowspan": "md:row-span-2", "colspan": "md:col-span-6", "color": "bg-zinc-900" ,"image": "images/gif.gif"}
+      { "rowspan": "md:row-span-2", "colspan": "md:col-span-6","image": "images/gif.gif"}
       
     ]
   }
