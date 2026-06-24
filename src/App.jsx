@@ -44,6 +44,8 @@ function App() {
       ease: "power2.inOut"
     });
   };
+
+
   {/* desktop view function  */}
   const DesktopHome = (
     <div ref={containerRef} className="w-full h-screen overflow-y-scroll snap-y snap-mandatory" style={{ scrollbarWidth: 'none' }}>
@@ -55,6 +57,8 @@ function App() {
       <Me />
     </div>
   );
+
+
 {/* mobile view function  */}
   const MobileHome =(
     <div>
@@ -78,6 +82,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
 
         {/* this chages the view if mobile or home  */}
+        
         <Route path="/" element={isMobile ? MobileHome : DesktopHome} />
       </Routes>
     </>

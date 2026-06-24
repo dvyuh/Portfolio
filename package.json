@@ -8,13 +8,14 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@cursorify/react": "^0.0.43",
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.3.0",
+    "framer-motion": "^12.41.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.17.0",
