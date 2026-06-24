@@ -70,19 +70,21 @@ function App() {
   return (
 <>
       {/* when in mobile view what not to keep  */}
-      {!isMobile &&
-      <CustomCursor /> &&
-      <NavBar
-        scrollToWork={() => scrollTo('work')}
-        scrollToSidequest={() => scrollTo('sidequest')}
-        scrollToMe={() => scrollTo('me')}
-      />}
-
+      {!isMobile && (
+              <>
+                  <CustomCursor />
+                  <NavBar
+                      scrollToWork={() => scrollTo('work')}
+                      scrollToSidequest={() => scrollTo('sidequest')}
+                      scrollToMe={() => scrollTo('me')}
+                  />
+              </>
+      )}
       <Routes>
         <Route path="/resume" element={<Resume />} />
 
         {/* this chages the view if mobile or home  */}
-        
+
         <Route path="/" element={isMobile ? MobileHome : DesktopHome} />
       </Routes>
     </>
