@@ -25,7 +25,6 @@ function Me(){
           interfaces in Figma and build functional software that works exactly
           as intended.
         </p>
-
         <p className="text-3xl leading-[1.6] text-[#111] max-w-250">
           In my free time I experiment with tactile graphic design, moving
           pixels around in Affinity, and making motion-heavy layouts. When I am
