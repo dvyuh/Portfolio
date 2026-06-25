@@ -1,7 +1,12 @@
+import NavBar from '../Components/Navbar';
+
+
 function Resume() {
-  return (
+  return (<>
+    <NavBar/>
+
     <div className="min-h-screen w-full bg-neutral-100 text-black flex items-start justify-center py-14 px-4">
-      <div className="snap-start translate-y-25 w-full max-w-7xl bg-neutral-100 text-black border-neutral-200 rounded-xl p-12" style={{ fontFamily: "'DM Sans', sans-serif" }} >
+      <div className="snap-start  w-full max-w-7xl bg-neutral-100 text-black border-neutral-200 rounded-xl p-12" style={{ fontFamily: "'DM Sans', sans-serif" }} >
         {/* ── Header ── */}
         <div className="flex justify-between items-start pb-6 border-b border-neutral-800 text-black"> 
           <div>
@@ -146,6 +151,7 @@ function Resume() {
       </div>
       
     </div>
+    </>
   );
 }
 

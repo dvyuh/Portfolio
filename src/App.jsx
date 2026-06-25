@@ -37,19 +37,11 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const scrollTo = (id) => {
-    gsap.to(containerRef.current, {
-      duration: 0.8,
-      scrollTo: `#${id}`,
-      ease: "power2.inOut"
-    });
-  };
-
 
   {/* desktop view function  */}
   const DesktopHome = (
     <div ref={containerRef} className="w-full h-screen overflow-y-scroll snap-y snap-mandatory" style={{ scrollbarWidth: 'none' }}>
-
+      <NavBar/>
       <Hero />
       <ProjectCarouselPage/>
       <CasestudyCarouselPage/>
@@ -69,23 +61,12 @@ function App() {
 
   return (
 <>
-      {/* when in mobile view what not to keep  */}
-      {!isMobile && (
-              <>
-                  <CustomCursor />
-                  <NavBar
-                      scrollToWork={() => scrollTo('work')}
-                      scrollToSidequest={() => scrollTo('sidequest')}
-                      scrollToMe={() => scrollTo('me')}
-                  />
-              </>
-      )}
+      <CustomCursor />
       <Routes>
-        <Route path="/resume" element={<Resume />} />
+      <Route path="/resume" element={<Resume />} />
 
         {/* this chages the view if mobile or home  */}
-
-        <Route path="/" element={isMobile ? MobileHome : DesktopHome} />
+      <Route path="/" element={isMobile ? MobileHome : DesktopHome} />
       </Routes>
     </>
   );
