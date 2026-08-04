@@ -4,16 +4,7 @@ My personal portfolio site — built with React and Vite, styled with Tailwind C
 
 ## Live Demo
 
-[Add your deployed link here]
-
-## Features
-
-- **Custom cursor** with GSAP-driven positioning and blend-mode effects
-- **Snap-scroll desktop layout** — Hero, Project carousel, Case study carousel, Sidequest carousel, and an "About Me" section
-- **Responsive mobile view** with its own dedicated home component
-- **Résumé page** as a standalone route
-- Smooth scrolling and section transitions via GSAP's `ScrollToPlugin`
-- Custom variable font (Host Grotesk) for typography
+https://dvyuh.github.io/Portfolio/
 
 ## Tech Stack
 
