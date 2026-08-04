@@ -1,16 +1,116 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio site — built with React and Vite, styled with Tailwind CSS, and animated with GSAP and Framer Motion. It has a desktop experience with a snap-scrolling, multi-section layout and a separate mobile view, plus a dedicated résumé page.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Add your deployed link here]
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Custom cursor** with GSAP-driven positioning and blend-mode effects
+- **Snap-scroll desktop layout** — Hero, Project carousel, Case study carousel, Sidequest carousel, and an "About Me" section
+- **Responsive mobile view** with its own dedicated home component
+- **Résumé page** as a standalone route
+- Smooth scrolling and section transitions via GSAP's `ScrollToPlugin`
+- Custom variable font (Host Grotesk) for typography
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** React 19 + Vite
+- **Styling:** Tailwind CSS v4
+- **Animation:** GSAP (`@gsap/react`, `ScrollToPlugin`), Framer Motion
+- **Cursor effects:** `@cursorify/react`
+- **Routing:** React Router v7 (`react-router-dom`, `react-router-hash-link`)
+- **Linting:** ESLint
+- **Deployment:** GitHub Pages (via `gh-pages`)
+
+## Project Structure
+
+```
+Portfolio/
+├── public/
+├── src/
+│   ├── Components/
+│   │   ├── CasestudyPage.jsx
+│   │   ├── CustomCursor.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Me.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ProjectPage.jsx
+│   │   └── SidequestPage.jsx
+│   ├── MobileView/
+│   │   └── MobileHome.jsx
+│   ├── Pages/
+│   │   └── resume.jsx
+│   ├── assets/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── vite.config.js
+├── eslint.config.js
+└── package.json
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/dvyuh/Portfolio.git
+cd Portfolio
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+This starts the Vite dev server with hot module replacement.
+
+### Build
+
+```bash
+npm run build
+```
+
+Outputs a production build to `dist/`.
+
+### Preview
+
+```bash
+npm run preview
+```
+
+Serves the production build locally.
+
+### Lint
+
+```bash
+npm run lint
+```
+
+### Deploy
+
+```bash
+npm run deploy
+```
+
+Builds the project and publishes `dist/` to GitHub Pages via `gh-pages`.
+
+## Routing
+
+| Route      | Component                          |
+|------------|-------------------------------------|
+| `/`        | Desktop or mobile home (responsive) |
+| `/resume`  | Résumé page                         |
+
+The app detects viewport width on load and on resize to switch between the desktop snap-scroll layout and the mobile home view.
